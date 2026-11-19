@@ -1,4 +1,4 @@
-> dotnet run 06-ingest.cs -- docintel
+> dotnet run 06-ingest.cs -- cu
 
 Ingested agents-propose-tools-decide.pdf: ok
 Ingested tensors-in-ten-pages.pdf: ok
@@ -6,12 +6,12 @@ Ingested tokens-explained.pdf: ok
 
 Q: How do I count tokens before calling a model?
 
-[0.61] tokens-explained.pdf | Three things to remember
-   Three things to remember · A token is not a word. A token often includes its leading space, so " world" is a single token.  . Every model has its own tokenizer. Use the one the model was trained with.  · Character counts are a poor guess. Always count tokens with the tokenizer.  the
+[0.60] tokens-explained.pdf | Plan your budget
+   Plan your budget Think of the context window as a budget you split between the parts of your prompt. The numbers below are only an example for a 128,000 token window.  | Part of the request | Example tokens | | --- | --- | | System prompt | 1,000 | | Retrieved context | 100,000 | | User question ...
+
+[0.60] tokens-explained.pdf | Three things to remember
+   Three things to remember . A token is not a word. A token often includes its leading space, so " world" is a single token.  . Every model has its own tokenizer. Use the one the model was trained with.  . Character counts are a poor guess. Always count tokens with the tokenizer.  The
 
 [0.55] tokens-explained.pdf | Counting tokens and staying in budget
    Counting tokens and staying in budget Every model has a context window, the maximum number of tokens it can read and write in one request. GPT-4o, for example, has a 128K token window. You are also billed per token, so counting tokens helps you control both size and cost.
-
-[0.55] tokens-explained.pdf | Plan your budget
-   Plan your budget Think of the context window as a budget you split between the parts of your prompt. The numbers below are only an example for a 128,000 token window.  | Part of the request | Example tokens | | --- | --- | | System prompt | 1,000 | | Retrieved context | 100,000 | | User question ...
 

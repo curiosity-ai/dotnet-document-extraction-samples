@@ -3,7 +3,7 @@
 // Walks every table cell by cell (including merged cells) and shows where each element
 // came from on the page, so you can cite it or highlight it later.
 //   dotnet run 04-tables-and-sources.cs -- ollama
-//   dotnet run 04-tables-and-sources.cs -- docintel
+//   dotnet run 04-tables-and-sources.cs -- cu
 #:include common/Providers.cs
 
 using Microsoft.Extensions.Documents;

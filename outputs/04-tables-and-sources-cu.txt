@@ -1,0 +1,36 @@
+> dotnet run 04-tables-and-sources.cs -- cu
+
+Azure Content Understanding: tokens-explained-hero.pdf
+
+Table: 6 rows x 5 columns
+  [0,0] spans 2x1 (columnHeader) Tokenizer
+  [0,1] spans 2x1 (columnHeader) Algorithm
+  [0,2] spans 2x1 (columnHeader) .NET type
+  [0,3] spans 1x2 (columnHeader) Where you'll see it
+  [1,3] (columnHeader) Model families
+  [1,4] (columnHeader) Typical use
+  [2,0] (content) Tiktoken
+  [2,1] (content) Optimized BPE
+  [2,2] (content) TiktokenTokenizer
+  [2,3] (content) GPT-4o, GPT-4, o1, o3
+  [2,4] (content) Cost and context checks for OpenAI calls
+  [3,0] (content) BPE
+  [3,1] (content) Byte pair encoding
+  [3,2] (content) BpeTokenizer
+  [3,3] (content) GPT-2, RoBERTa
+  [3,4] (content) Custom vocab and merges files
+  [4,0] (content) SentencePiece (Llama)
+  [4,1] (content) SentencePiece (BPE or Unigram)
+  [4,2] (content) LlamaTokenizer
+  [4,3] (content) Llama 2, T5, mBART
+  [4,4] (content) Open-weight and multilingual models
+  [5,0] (content) WordPiece (BERT)
+  [5,1] (content) WordPiece
+  [5,2] (content) BertTokenizer
+  [5,3] (content) BERT, DistilBERT
+  [5,4] (content) Embeddings and classification
+
+Where the headings are:
+  "Tokenizers in .NET"
+    page 1, Inch: (0.79,0.81) (2.95,0.81) (2.95,1.06) (0.79,1.06)
+

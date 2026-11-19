@@ -3,7 +3,7 @@
 // Extracts the three books with any provider, turns the result into IngestionDocuments,
 // chunks at headings, embeds with a local model, and searches the result.
 //   dotnet run 06-ingest.cs
-//   dotnet run 06-ingest.cs -- docintel "How do I count tokens before calling a model?"
+//   dotnet run 06-ingest.cs -- cu "How do I count tokens before calling a model?"
 #:include common/Providers.cs
 #:package Microsoft.Extensions.DataIngestion@11.0.0-preview.1.26560.3
 #:package Microsoft.ML.Tokenizers.Data.O200kBase@3.0.0

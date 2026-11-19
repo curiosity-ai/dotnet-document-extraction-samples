@@ -3,7 +3,7 @@
 // Registers clients in dependency injection, adds logging and two custom middleware,
 // and falls back to an OCR provider when a PDF has no text layer (a scanned page).
 //   dotnet run 05-pipeline.cs
-//   dotnet run 05-pipeline.cs -- docintel
+//   dotnet run 05-pipeline.cs -- cu
 #:include common/Providers.cs
 #:package Microsoft.Extensions.DependencyInjection@11.0.0
 #:package Microsoft.Extensions.Logging.Console@11.0.0
@@ -18,7 +18,7 @@ using Microsoft.Extensions.Logging;
 // Use the provider you name, or the first cloud provider you've configured, or local Ollama.
 string ocrName = args.Length > 0
     ? args[0]
-    : new[] { "docintel", "mistral", "cu" }.FirstOrDefault(n => Providers.Create(n, out _) is { } c && Dispose(c)) ?? "ollama";
+    : new[] { "cu", "docintel", "mistral" }.FirstOrDefault(n => Providers.Create(n, out _) is { } c && Dispose(c)) ?? "ollama";
 
 var services = new ServiceCollection();
 services.AddLogging(logging => logging

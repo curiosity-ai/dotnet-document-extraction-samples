@@ -1,9 +1,9 @@
-> dotnet run 05-pipeline.cs -- docintel
+> dotnet run 05-pipeline.cs -- cu
 
 
 == tokens-explained.pdf
 dbug: Microsoft.Extensions.DocumentExtraction.LoggingDocumentExtractionClient[1723383095] Document extraction invoked.
-   pdfpig read tokens-explained.pdf in 0.7s
+   pdfpig read tokens-explained.pdf in 1.1s
 dbug: Microsoft.Extensions.DocumentExtraction.LoggingDocumentExtractionClient[1553703230] Document extraction completed.
    5 sections, about 739 words
 
@@ -12,8 +12,8 @@ dbug: Microsoft.Extensions.DocumentExtraction.LoggingDocumentExtractionClient[17
    pdfpig read tokens-explained-scanned.pdf in 0.0s
    No text layer in tokens-explained-scanned.pdf (0 characters). Falling back to OCR.
 dbug: Microsoft.Extensions.DocumentExtraction.LoggingDocumentExtractionClient[1723383095] Document extraction invoked.
-   docintel read tokens-explained-scanned.pdf in 14.6s
+   cu read tokens-explained-scanned.pdf in 13.1s
 dbug: Microsoft.Extensions.DocumentExtraction.LoggingDocumentExtractionClient[1553703230] Document extraction completed.
 dbug: Microsoft.Extensions.DocumentExtraction.LoggingDocumentExtractionClient[1553703230] Document extraction completed.
-   5 sections, about 738 words
+   5 sections, about 767 words
 
