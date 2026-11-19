@@ -1,0 +1,92 @@
+> dotnet run 02-swap-providers.cs -- pdfpig
+
+PdfPig (local, text layer) took 0.4s
+tokens-explained-hero.pdf: 1 sections
+  p1 [text] Tokens, Explained
+  p1 [text] Sample book for document extraction
+  p1 [heading] Tokenizers in .NET
+  p1 [text] The Microsoft.ML.Tokenizers library brings popular model tokenizers...
+  p1 [text] Tokenizer
+  p1 [text] Algorithm
+  p1 [text] .NET type
+  p1 [text] Where you'll see it
+  p1 [text] Model families
+  p1 [text] Typical use
+  p1 [text] Tiktoken
+  p1 [text] Optimized BPE
+  p1 [text] TiktokenTokenizer
+  p1 [text] GPT-4o, GPT-4, o1, o3
+  p1 [text] Cost and context checks for OpenAI calls
+  p1 [text] BPE
+  p1 [text] Byte pair encoding
+  p1 [text] BpeTokenizer
+  p1 [text] GPT-2, RoBERTa
+  p1 [text] Custom vocab and merges files
+  p1 [text] SentencePiece (Llama)
+  p1 [text] SentencePiece (BPE or Unigram)
+  p1 [text] LlamaTokenizer
+  p1 [text] Llama 2, T5, mBART
+  p1 [text] Open-weight and multilingual models
+  p1 [text] WordPiece (BERT)
+  p1 [text] WordPiece
+  p1 [text] BertTokenizer
+  p1 [text] BERT, DistilBERT
+  p1 [text] Embeddings and classification
+  p1 [text] Figure 2. Every encode call runs text through the same pipeline of ...
+  p1 [text] using Microsoft.ML.Tokenizers;
+  p1 [text] TiktokenTokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt...
+  p1 [text] int count = tokenizer.CountTokens("Hello, world!"); Console.WriteLi...
+  p1 [text] Page 3 of 5
+
+> dotnet run 02-swap-providers.cs -- docintel
+
+Azure Document Intelligence took 12.9s
+tokens-explained-hero.pdf: 1 sections
+  p1 [pageHeader] Tokens, Explained
+  p1 [pageHeader] Sample book for document extraction
+  p1 [heading] Tokenizers in .NET
+  p1 [text] The Microsoft. ML. Tokenizers library brings popular model tokenize...
+  p1 [table 6x5] 
+  p1 [heading] The tokenization pipeline
+  p1 [image] 
+  p1 [text] Decode runs the other way: Token IDs back to text.
+  p1 [text] using Microsoft.ML. Tokenizers;
+  p1 [text] TiktokenTokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt...
+  p1 [text] int count = tokenizer.CountTokens("Hello, world!"); Console.WriteLi...
+  p1 [text] Figure 2. Every encode call runs text through the same pipeline of ...
+  p1 [pageNumber] Page 3 of 5
+
+> dotnet run 02-swap-providers.cs -- cu
+
+Azure Content Understanding took 10.2s
+tokens-explained-hero.pdf: 1 sections
+  p1 [pageHeader] Tokens, Explained
+  p1 [pageHeader] Sample book for document extraction
+  p1 [heading] Tokenizers in .NET
+  p1 [text] The Microsoft. ML. Tokenizers library brings popular model tokenize...
+  p1 [table 6x5] 
+  p1 [image] 
+  p1 [text] Decode runs the other way: Token IDs back to text.
+  p1 [text] Figure 2. Every encode call runs text through the same pipeline of ...
+  p1 [text] using Microsoft.ML. Tokenizers;
+  p1 [text] TiktokenTokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt...
+  p1 [text] int count = tokenizer.CountTokens("Hello, world!"); Console.WriteLi...
+  p1 [text] The tokenization pipeline
+  p1 [pageNumber] Page 3 of 5
+
+> dotnet run 02-swap-providers.cs -- mistral
+
+Mistral Document AI took 9.4s
+tokens-explained-hero.pdf: 1 sections
+  p1 [text] Tokens, Explained  Sample book for document extraction  # Tokenizer...
+  p1 [image] 
+  p1 [text] Decode runs the other way: Token IDs back to text.  Figure 2. Every...
+
+> dotnet run 02-swap-providers.cs -- ollama
+
+Vision language model (Ollama) took 23.6s
+tokens-explained-hero.pdf: 1 sections
+  p1 [text] # Tokens, Explained  Sample book for document extraction  ## Tokeni...
+  p1 [table 6x5] 
+  p1 [image]
+

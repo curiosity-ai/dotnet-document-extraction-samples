@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <text x="400" y="36" font-size="24" font-weight="bold" fill="#1b1b1b" text-anchor="middle">From text to tokens to IDs</text>
+
+  <text x="20" y="92" font-size="18" font-weight="bold" fill="#512BD4">1. Text</text>
+  <rect x="150" y="66" width="630" height="40" rx="6" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
+  <text x="465" y="93" font-size="22" fill="#1b1b1b" text-anchor="middle">"The cat sat on the mat"</text>
+
+  <path d="M465 112 L465 146" stroke="#1b1b1b" stroke-width="2"/>
+  <path d="M457 138 L465 150 L473 138 Z" fill="#1b1b1b"/>
+
+  <text x="20" y="190" font-size="18" font-weight="bold" fill="#512BD4">2. Tokens</text>
+  <g font-size="22" fill="#1b1b1b" text-anchor="middle">
+    <rect x="150" y="160" width="95" height="46" rx="6" fill="#EFEAFB" stroke="#512BD4" stroke-width="2"/>
+    <text x="197" y="191">The</text>
+    <rect x="257" y="160" width="95" height="46" rx="6" fill="#EFEAFB" stroke="#512BD4" stroke-width="2"/>
+    <text x="304" y="191">_cat</text>
+    <rect x="364" y="160" width="95" height="46" rx="6" fill="#EFEAFB" stroke="#512BD4" stroke-width="2"/>
+    <text x="411" y="191">_sat</text>
+    <rect x="471" y="160" width="95" height="46" rx="6" fill="#EFEAFB" stroke="#512BD4" stroke-width="2"/>
+    <text x="518" y="191">_on</text>
+    <rect x="578" y="160" width="95" height="46" rx="6" fill="#EFEAFB" stroke="#512BD4" stroke-width="2"/>
+    <text x="625" y="191">_the</text>
+    <rect x="685" y="160" width="95" height="46" rx="6" fill="#EFEAFB" stroke="#512BD4" stroke-width="2"/>
+    <text x="732" y="191">_mat</text>
+  </g>
+
+  <path d="M465 214 L465 248" stroke="#1b1b1b" stroke-width="2"/>
+  <path d="M457 240 L465 252 L473 240 Z" fill="#1b1b1b"/>
+
+  <text x="20" y="292" font-size="18" font-weight="bold" fill="#512BD4">3. Token IDs</text>
+  <g font-size="22" fill="#1b1b1b" text-anchor="middle">
+    <rect x="150" y="262" width="95" height="46" rx="6" fill="#E8F1FB" stroke="#0F6CBD" stroke-width="2"/>
+    <text x="197" y="293">464</text>
+    <rect x="257" y="262" width="95" height="46" rx="6" fill="#E8F1FB" stroke="#0F6CBD" stroke-width="2"/>
+    <text x="304" y="293">3857</text>
+    <rect x="364" y="262" width="95" height="46" rx="6" fill="#E8F1FB" stroke="#0F6CBD" stroke-width="2"/>
+    <text x="411" y="293">3290</text>
+    <rect x="471" y="262" width="95" height="46" rx="6" fill="#E8F1FB" stroke="#0F6CBD" stroke-width="2"/>
+    <text x="518" y="293">389</text>
+    <rect x="578" y="262" width="95" height="46" rx="6" fill="#E8F1FB" stroke="#0F6CBD" stroke-width="2"/>
+    <text x="625" y="293">279</text>
+    <rect x="685" y="262" width="95" height="46" rx="6" fill="#E8F1FB" stroke="#0F6CBD" stroke-width="2"/>
+    <text x="732" y="293">2450</text>
+  </g>
+
+  <line x1="20" y1="340" x2="780" y2="340" stroke="#d0d0d0" stroke-width="1"/>
+  <text x="20" y="374" font-size="18" fill="#1b1b1b">The underscore ( _ ) marks a leading space that belongs to the token.</text>
+  <text x="20" y="404" font-size="18" fill="#1b1b1b">Encode goes down this page. Decode goes back up.</text>
+  <text x="20" y="434" font-size="18" font-style="italic" fill="#0F6CBD">Illustrative only: real IDs depend on the tokenizer and its vocabulary.</text>
+</svg>

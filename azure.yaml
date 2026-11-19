@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+# Optional. Creates one keyless Microsoft Foundry resource for the three Azure providers.
+#   azd up      provision, then run any sample with docintel, cu, or mistral
+#   azd down --purge   delete everything when you're done
+name: dotnet-document-extraction-samples
+infra:
+  provider: bicep
+  path: infra

@@ -1,0 +1,7 @@
+bin/
+obj/
+.azure/
+*.sheet.png
+.vs/
+.vscode/
+

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="800" height="450" fill="#FFFFFF"/>
+
+  <g font-size="24" font-weight="bold" fill="#512BD4" text-anchor="middle">
+    <text x="100" y="60">Scalar</text>
+    <text x="300" y="60">Vector</text>
+    <text x="500" y="60">Matrix</text>
+    <text x="700" y="60">3-D tensor</text>
+  </g>
+
+  <g stroke="#512BD4" stroke-width="2" fill="#FFFFFF">
+    <!-- Scalar -->
+    <rect x="75" y="180" width="50" height="50"/>
+    <!-- Vector [4] -->
+    <rect x="220" y="185" width="40" height="40"/>
+    <rect x="260" y="185" width="40" height="40"/>
+    <rect x="300" y="185" width="40" height="40"/>
+    <rect x="340" y="185" width="40" height="40"/>
+    <!-- Matrix [2, 3] -->
+    <rect x="440" y="165" width="40" height="40"/>
+    <rect x="480" y="165" width="40" height="40"/>
+    <rect x="520" y="165" width="40" height="40"/>
+    <rect x="440" y="205" width="40" height="40"/>
+    <rect x="480" y="205" width="40" height="40"/>
+    <rect x="520" y="205" width="40" height="40"/>
+  </g>
+
+  <!-- 3-D tensor [2, 3, 4]: back layer -->
+  <g stroke="#512BD4" stroke-width="2" fill="#E8E1FA">
+    <rect x="646" y="140" width="128" height="96"/>
+  </g>
+  <g stroke="#512BD4" stroke-width="1.5">
+    <line x1="678" y1="140" x2="678" y2="236"/>
+    <line x1="710" y1="140" x2="710" y2="236"/>
+    <line x1="742" y1="140" x2="742" y2="236"/>
+    <line x1="646" y1="172" x2="774" y2="172"/>
+    <line x1="646" y1="204" x2="774" y2="204"/>
+  </g>
+  <!-- 3-D tensor: front layer -->
+  <g stroke="#512BD4" stroke-width="2" fill="#FFFFFF">
+    <rect x="626" y="160" width="128" height="96"/>
+  </g>
+  <g stroke="#512BD4" stroke-width="1.5">
+    <line x1="658" y1="160" x2="658" y2="256"/>
+    <line x1="690" y1="160" x2="690" y2="256"/>
+    <line x1="722" y1="160" x2="722" y2="256"/>
+    <line x1="626" y1="192" x2="754" y2="192"/>
+    <line x1="626" y1="224" x2="754" y2="224"/>
+  </g>
+
+  <g font-size="22" fill="#1b1b1b" text-anchor="middle">
+    <text x="100" y="213">7</text>
+    <text x="240" y="213">1</text>
+    <text x="280" y="213">2</text>
+    <text x="320" y="213">3</text>
+    <text x="360" y="213">4</text>
+    <text x="460" y="193">1</text>
+    <text x="500" y="193">2</text>
+    <text x="540" y="193">3</text>
+    <text x="460" y="233">4</text>
+    <text x="500" y="233">5</text>
+    <text x="540" y="233">6</text>
+  </g>
+
+  <g font-size="18" fill="#0F6CBD" text-anchor="middle">
+    <text x="300" y="260">4 elements</text>
+    <text x="500" y="285">2 rows, 3 columns</text>
+    <text x="700" y="290">2 layers of 3 x 4</text>
+  </g>
+
+  <line x1="30" y1="320" x2="770" y2="320" stroke="#0F6CBD" stroke-width="1"/>
+
+  <g font-size="22" fill="#1b1b1b" text-anchor="middle">
+    <text x="100" y="365">Rank 0</text>
+    <text x="300" y="365">Rank 1</text>
+    <text x="500" y="365">Rank 2</text>
+    <text x="700" y="365">Rank 3</text>
+  </g>
+  <g font-size="22" font-weight="bold" fill="#512BD4" text-anchor="middle">
+    <text x="100" y="405">Shape [ ]</text>
+    <text x="300" y="405">Shape [4]</text>
+    <text x="500" y="405">Shape [2, 3]</text>
+    <text x="700" y="405">Shape [2, 3, 4]</text>
+  </g>
+</svg>

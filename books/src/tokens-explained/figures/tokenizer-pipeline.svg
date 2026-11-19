@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="800" height="300" fill="#ffffff"/>
+  <text x="400" y="38" font-size="24" font-weight="bold" fill="#1b1b1b" text-anchor="middle">The tokenization pipeline</text>
+
+  <g font-size="20" font-weight="bold" text-anchor="middle">
+    <rect x="4" y="100" width="136" height="70" rx="8" fill="#ffffff" stroke="#1b1b1b" stroke-width="2"/>
+    <text x="72" y="142" fill="#1b1b1b">Input text</text>
+
+    <rect x="168" y="100" width="136" height="70" rx="8" fill="#EFEAFB" stroke="#512BD4" stroke-width="2"/>
+    <text x="236" y="142" fill="#512BD4">Normalizer</text>
+
+    <rect x="332" y="100" width="136" height="70" rx="8" fill="#EFEAFB" stroke="#512BD4" stroke-width="2"/>
+    <text x="400" y="142" fill="#512BD4">Pre-tokenizer</text>
+
+    <rect x="496" y="100" width="136" height="70" rx="8" fill="#512BD4" stroke="#512BD4" stroke-width="2"/>
+    <text x="564" y="142" fill="#ffffff">Model</text>
+
+    <rect x="660" y="100" width="136" height="70" rx="8" fill="#E8F1FB" stroke="#0F6CBD" stroke-width="2"/>
+    <text x="728" y="142" fill="#0F6CBD">Token IDs</text>
+  </g>
+
+  <g stroke="#1b1b1b" stroke-width="2" fill="#1b1b1b">
+    <line x1="141" y1="135" x2="158" y2="135"/>
+    <path d="M156 129 L167 135 L156 141 Z" stroke="none"/>
+    <line x1="305" y1="135" x2="322" y2="135"/>
+    <path d="M320 129 L331 135 L320 141 Z" stroke="none"/>
+    <line x1="469" y1="135" x2="486" y2="135"/>
+    <path d="M484 129 L495 135 L484 141 Z" stroke="none"/>
+    <line x1="633" y1="135" x2="650" y2="135"/>
+    <path d="M648 129 L659 135 L648 141 Z" stroke="none"/>
+  </g>
+
+  <g font-size="18" fill="#1b1b1b" text-anchor="middle">
+    <text x="72" y="204">"Hello, world!"</text>
+    <text x="236" y="204">optional</text>
+    <text x="236" y="228">cleans text</text>
+    <text x="400" y="204">optional</text>
+    <text x="400" y="228">splits chunks</text>
+    <text x="564" y="204">core engine</text>
+    <text x="564" y="228">BPE, WordPiece</text>
+    <text x="728" y="204">[13225, 11,</text>
+    <text x="728" y="228">2375, 0]</text>
+  </g>
+
+  <text x="400" y="280" font-size="18" font-style="italic" fill="#0F6CBD" text-anchor="middle">Decode runs the other way: Token IDs back to text.</text>
+</svg>

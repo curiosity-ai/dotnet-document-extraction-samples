@@ -1,0 +1,19 @@
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    command: sleep infinity
+    volumes:
+      - ../..:/workspaces:cached
+    environment:
+      OLLAMA_ENDPOINT: http://ollama:11434
+    depends_on:
+      - ollama
+
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  ollama:

@@ -1,0 +1,100 @@
+> dotnet run 01-extract.cs
+
+tokens-explained.pdf: 5 sections
+
+Section (page 1), 5 elements
+  [heading] Tokens, Explained
+  [heading] A short introduction to tokenization in .NET By Luis Quintanilla In...
+  [text] What a token is, and why models read tokens instead of words The to...
+  [text] Before you start. All examples use the Microsoft.ML.Tokenizers NuGe...
+  [text] Page 1 of 5
+Section (page 2), 14 elements
+  [text] Tokens, Explained
+  [text] Sample book for document extraction
+  [heading] What is a token?
+  [text] A language model never sees your text directly. Before the model ru...
+  [text] When the model answers, the process runs in reverse. The model prod...
+  [text] Figure 1. Text becomes tokens, and tokens become IDs. The IDs are i...
+  [heading] Why not just use words?
+  [text] Splitting on words sounds simple, but English alone has hundreds of...
+  [text] Modern models use subword tokens instead. Common words stay whole, ...
+  [heading] Three things to remember
+  [text] A token is not a word. A token often includes its leading space, so...
+  [text] Every model has its own tokenizer. Use the one the model was traine...
+  [text] Character counts are a poor guess. Always count tokens with the tok...
+  [text] Page 2 of 5
+Section (page 3), 35 elements
+  [text] Tokens, Explained
+  [text] Sample book for document extraction
+  [heading] Tokenizers in .NET
+  [text] The Microsoft.ML.Tokenizers library brings popular model tokenizers...
+  [text] Tokenizer
+  [text] Algorithm
+  [text] .NET type
+  [text] Where you'll see it
+  [text] Model families
+  [text] Typical use
+  [text] Tiktoken
+  [text] Optimized BPE
+  [text] TiktokenTokenizer
+  [text] GPT-4o, GPT-4, o1, o3
+  [text] Cost and context checks for OpenAI calls
+  [text] BPE
+  [text] Byte pair encoding
+  [text] BpeTokenizer
+  [text] GPT-2, RoBERTa
+  [text] Custom vocab and merges files
+  [text] SentencePiece (Llama)
+  [text] SentencePiece (BPE or Unigram)
+  [text] LlamaTokenizer
+  [text] Llama 2, T5, mBART
+  [text] Open-weight and multilingual models
+  [text] WordPiece (BERT)
+  [text] WordPiece
+  [text] BertTokenizer
+  [text] BERT, DistilBERT
+  [text] Embeddings and classification
+  [text] Figure 2. Every encode call runs text through the same pipeline of ...
+  [text] using Microsoft.ML.Tokenizers;
+  [text] TiktokenTokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt...
+  [text] int count = tokenizer.CountTokens("Hello, world!"); Console.WriteLi...
+  [text] Page 3 of 5
+Section (page 4), 31 elements
+  [text] Tokens, Explained
+  [text] Sample book for document extraction
+  [heading] Counting tokens and staying in budget
+  [text] Every model has a context window, the maximum number of tokens it c...
+  [heading] Cut text at a token limit
+  [text] Cutting a string at 1,000 characters might give you 200 tokens or 8...
+  [text] int maxTokens = 500;
+  [text] if (tokenizer.CountTokens(longText) > maxTokens) {
+  [text] int cut = tokenizer.GetIndexByTokenCount( longText, maxTokens, out ...
+  [text] longText = longText[..cut]; Console.WriteLine($"Kept {used} tokens.");
+  [text] }
+  [text] To keep the most recent text instead, such as the end of a chat his...
+  [heading] Plan your budget
+  [text] Think of the context window as a budget you split between the parts...
+  [text] Part of the request
+  [text] Example tokens
+  [text] System prompt
+  [text] 1,000
+  [text] Retrieved context
+  [text] 100,000
+  [text] User question
+  [text] 500
+  [text] Response reserve
+  [text] 4,096
+  [text] Unused headroom
+  [text] 22,404
+  [text] Total
+  [text] 128,000
+  [text] Tip. Always reserve tokens for the model's response. If your prompt...
+  [heading] Where to go next
+  [text] Page 4 of 5
+Section (page 5), 5 elements
+  [text] Tokens, Explained
+  [text] Sample book for document extraction
+  [text] You now know what tokens are, which tokenizer to pick, and how to s...
+  [text] The full .NET tokenizers guide, with deep dives on each tokenizer, ...
+  [text] Page 5 of 5
+
