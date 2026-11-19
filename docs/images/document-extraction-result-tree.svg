@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <style>
+    .title { font: 700 50px 'Segoe UI', sans-serif; fill: #fff; }
+    .sub { font: 400 23px 'Segoe UI', sans-serif; fill: #b4a7f5; }
+    .ty { font: 600 18px 'Cascadia Code', Consolas, monospace; }
+    .det { font: 400 17px 'Segoe UI', sans-serif; fill: #c9c4de; }
+    .ch { font: 600 17px 'Cascadia Code', Consolas, monospace; fill: #fff; }
+    .chd { font: 400 15px 'Segoe UI', sans-serif; fill: #a8a3bf; }
+    .tot { font: 700 22px 'Segoe UI', sans-serif; }
+    .dd { font: 400 15px 'Segoe UI', sans-serif; fill: #a8a3bf; }
+  </style>
+  <rect width="1600" height="900" fill="#1e1b2e"/>
+  <text x="75" y="88" class="title">The result is a tree</text>
+  <text x="75" y="132" class="sub">Layout-aware providers nest sections inside sections. Walk all of it.</text>
+
+  <rect x="1080" y="160" width="445" height="690" rx="16" fill="#2b2640"/>
+  <text x="1190" y="194" class="ch" text-anchor="middle">Sections</text>
+  <text x="1190" y="214" class="ch" text-anchor="middle">→ Elements</text>
+  <text x="1420" y="204" class="ch" text-anchor="middle">EnumerateContent()</text>
+  <rect x="100" y="219" width="248" height="34" rx="8" fill="#2b2640" stroke="#ffffff" stroke-width="2"/>
+  <text x="114" y="243" class="ty" fill="#ffffff">ExtractionDocument</text>
+  <text x="364" y="242" class="det">tokens-explained.pdf</text>
+  <path d="M114,258 L114,288 L138,288" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="144" y="271" width="113" height="34" rx="8" fill="none" stroke="#9d97b8" stroke-width="2"/>
+  <text x="158" y="295" class="ty" fill="#9d97b8">Section</text>
+  <text x="273" y="294" class="det">document.Sections[0]</text>
+  <path d="M158,310 L158,340 L182,340" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="188" y="323" width="77" height="34" rx="8" fill="#2b2640" stroke="#b4a7f5" stroke-width="2"/>
+  <text x="202" y="347" class="ty" fill="#b4a7f5">Text</text>
+  <text x="281" y="346" class="det">pageHeader · &quot;Tokens, Explained&quot;</text>
+  <circle cx="1190" cy="340" r="14" fill="#3ddbb5" fill-opacity="0.18"/><path d="M1184,340 l4,5 l9,-10" fill="none" stroke="#3ddbb5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1420" cy="340" r="14" fill="#3ddbb5" fill-opacity="0.18"/><path d="M1414,340 l4,5 l9,-10" fill="none" stroke="#3ddbb5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M158,362 L158,392 L182,392" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="188" y="375" width="113" height="34" rx="8" fill="none" stroke="#9d97b8" stroke-width="2"/>
+  <text x="202" y="399" class="ty" fill="#9d97b8">Section</text>
+  <text x="317" y="398" class="det">nested</text>
+  <text x="1190" y="398" class="det" text-anchor="middle">stops here</text>
+  <path d="M202,414 L202,444 L226,444" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="232" y="427" width="77" height="34" rx="8" fill="#2b2640" stroke="#b4a7f5" stroke-width="2"/>
+  <text x="246" y="451" class="ty" fill="#b4a7f5">Text</text>
+  <text x="325" y="450" class="det">heading · &quot;Tokenizers in .NET&quot;</text>
+  <circle cx="1190" cy="444" r="14" fill="#ff6fb5" fill-opacity="0.15"/><path d="M1185,439 l10,10 M1195,439 l-10,10" stroke="#ff6fb5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1420" cy="444" r="14" fill="#3ddbb5" fill-opacity="0.18"/><path d="M1414,444 l4,5 l9,-10" fill="none" stroke="#3ddbb5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M202,466 L202,496 L226,496" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="232" y="479" width="77" height="34" rx="8" fill="#2b2640" stroke="#b4a7f5" stroke-width="2"/>
+  <text x="246" y="503" class="ty" fill="#b4a7f5">Text</text>
+  <text x="325" y="502" class="det">&quot;The Microsoft.ML.Tokenizers library...&quot;</text>
+  <circle cx="1190" cy="496" r="14" fill="#ff6fb5" fill-opacity="0.15"/><path d="M1185,491 l10,10 M1195,491 l-10,10" stroke="#ff6fb5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1420" cy="496" r="14" fill="#3ddbb5" fill-opacity="0.18"/><path d="M1414,496 l4,5 l9,-10" fill="none" stroke="#3ddbb5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M202,518 L202,548 L226,548" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="232" y="531" width="89" height="34" rx="8" fill="#2b2640" stroke="#3ddbb5" stroke-width="2"/>
+  <text x="246" y="555" class="ty" fill="#3ddbb5">Table</text>
+  <text x="337" y="554" class="det">6x5 · Cells[row, col]</text>
+  <circle cx="1190" cy="548" r="14" fill="#ff6fb5" fill-opacity="0.15"/><path d="M1185,543 l10,10 M1195,543 l-10,10" stroke="#ff6fb5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1420" cy="548" r="14" fill="#3ddbb5" fill-opacity="0.18"/><path d="M1414,548 l4,5 l9,-10" fill="none" stroke="#3ddbb5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M202,570 L202,600 L226,600" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="232" y="583" width="113" height="34" rx="8" fill="none" stroke="#9d97b8" stroke-width="2"/>
+  <text x="246" y="607" class="ty" fill="#9d97b8">Section</text>
+  <text x="361" y="606" class="det">nested</text>
+  <path d="M246,622 L246,652 L270,652" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="276" y="635" width="77" height="34" rx="8" fill="#2b2640" stroke="#b4a7f5" stroke-width="2"/>
+  <text x="290" y="659" class="ty" fill="#b4a7f5">Text</text>
+  <text x="369" y="658" class="det">heading · &quot;The tokenization pipeline&quot;</text>
+  <circle cx="1190" cy="652" r="14" fill="#ff6fb5" fill-opacity="0.15"/><path d="M1185,647 l10,10 M1195,647 l-10,10" stroke="#ff6fb5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1420" cy="652" r="14" fill="#3ddbb5" fill-opacity="0.18"/><path d="M1414,652 l4,5 l9,-10" fill="none" stroke="#3ddbb5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M246,674 L246,704 L270,704" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="276" y="687" width="89" height="34" rx="8" fill="#2b2640" stroke="#f5b942" stroke-width="2"/>
+  <text x="290" y="711" class="ty" fill="#f5b942">Image</text>
+  <text x="381" y="710" class="det">the figure · Sources: page 3 + polygon</text>
+  <circle cx="1190" cy="704" r="14" fill="#ff6fb5" fill-opacity="0.15"/><path d="M1185,699 l10,10 M1195,699 l-10,10" stroke="#ff6fb5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1420" cy="704" r="14" fill="#3ddbb5" fill-opacity="0.18"/><path d="M1414,704 l4,5 l9,-10" fill="none" stroke="#3ddbb5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M158,726 L158,756 L182,756" fill="none" stroke="#4a4366" stroke-width="2"/>
+  <rect x="188" y="739" width="77" height="34" rx="8" fill="#2b2640" stroke="#b4a7f5" stroke-width="2"/>
+  <text x="202" y="763" class="ty" fill="#b4a7f5">Text</text>
+  <text x="281" y="762" class="det">pageNumber · &quot;Page 3 of 5&quot;</text>
+  <circle cx="1190" cy="756" r="14" fill="#3ddbb5" fill-opacity="0.18"/><path d="M1184,756 l4,5 l9,-10" fill="none" stroke="#3ddbb5" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1420" cy="756" r="14" fill="#3ddbb5" fill-opacity="0.18"/><path d="M1414,756 l4,5 l9,-10" fill="none" stroke="#3ddbb5" stroke-width="3" stroke-linecap="round"/>
+
+  <line x1="1100" y1="782" x2="1505" y2="782" stroke="#4a4366" stroke-width="1.5"/>
+  <text x="1190" y="814" class="tot" fill="#ff6fb5" text-anchor="middle">2 of 7</text>
+  <text x="1420" y="814" class="tot" fill="#3ddbb5" text-anchor="middle">7 of 7</text>
+  <text x="1302" y="838" class="chd" text-anchor="middle">content elements reached</text>
+
+  <text x="75" y="884" class="dd">Illustrative shape of tokens-explained.pdf page 3 from a layout-aware provider. EnumerateContent() skips sections and doesn't enter table cells.</text>
+</svg>

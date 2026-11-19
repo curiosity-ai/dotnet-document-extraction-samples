@@ -3,103 +3,123 @@
     .title { font: 700 56px 'Segoe UI', sans-serif; fill: #fff; }
     .sub { font: 400 26px 'Segoe UI', sans-serif; fill: #b4a7f5; }
     .layer { font: 600 26px 'Segoe UI', sans-serif; }
-    .api { font: 400 19px 'Cascadia Code', Consolas, monospace; fill: #fff; }
-    .api-dim { font: 400 19px 'Cascadia Code', Consolas, monospace; fill: #9d97b8; }
-    .new { font: 700 19px 'Cascadia Code', Consolas, monospace; fill: #ff6fb5; }
+    .lib { font: 600 20px 'Cascadia Code', Consolas, monospace; fill: #fff; }
+    .lib-dim { font: 600 20px 'Cascadia Code', Consolas, monospace; fill: #c9c4de; }
+    .ns { font: 400 15px 'Cascadia Code', Consolas, monospace; fill: #9d97b8; }
+    .ns-new { font: 400 15px 'Cascadia Code', Consolas, monospace; fill: #ff9fcd; }
+    .new { font: 700 20px 'Cascadia Code', Consolas, monospace; fill: #ff6fb5; }
     .desc { font: 400 16px 'Segoe UI', sans-serif; fill: #a8a3bf; }
-    .desc-hi { font: 400 17px 'Segoe UI', sans-serif; fill: #e4e0f5; }
-    .pill { font: 700 14px 'Segoe UI', sans-serif; fill: #1e1b2e; }
-    .foot { font: 400 18px 'Segoe UI', sans-serif; fill: #d6d2ea; }
-    .pkg { font: 600 17px 'Segoe UI', sans-serif; }
+    .desc-hi { font: 400 16px 'Segoe UI', sans-serif; fill: #e4e0f5; }
+    .apps { font: 400 21px 'Segoe UI', sans-serif; fill: #c9c4de; }
+    .step { font: 700 14px 'Segoe UI', sans-serif; letter-spacing: 1.5px; }
+    .pill { font: 700 13px 'Segoe UI', sans-serif; fill: #1e1b2e; }
+    .foot { font: 400 17px 'Segoe UI', sans-serif; fill: #a8a3bf; }
     .ph { font: 700 18px 'Segoe UI', sans-serif; fill: #b4a7f5; letter-spacing: 1px; }
     .pg { font: 700 15px 'Segoe UI', sans-serif; letter-spacing: 1px; }
     .pi { font: 400 19px 'Segoe UI', sans-serif; fill: #fff; }
     .tag { font: 400 17px 'Segoe UI', sans-serif; fill: #b4a7f5; }
   </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3ddbb5"/></marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#ff6fb5"/></marker>
+  </defs>
   <rect width="1600" height="900" fill="#1e1b2e"/>
   <text x="75" y="92" class="title">Where document extraction fits</text>
-  <text x="75" y="142" class="sub">The .NET AI stack, one contract per job. Pink = new.</text>
+  <text x="75" y="142" class="sub">The .NET AI stack, by library. Pink = new.</text>
 
-  <!-- Experiences -->
-  <g opacity="0.55">
-    <rect x="75" y="190" width="1058" height="88" rx="14" fill="#2b2640"/>
-    <rect x="75" y="190" width="6" height="88" fill="#f5b942"/>
-    <text x="103" y="242" class="layer" fill="#f5b942">Your app</text>
-    <text x="366" y="228" class="api-dim">ASP.NET Core · Blazor · .NET MAUI · console</text>
-    <text x="366" y="256" class="desc">Where your users meet the answer</text>
+  <!-- Your app -->
+  <g opacity="0.6">
+    <rect x="75" y="186" width="1058" height="78" rx="14" fill="#2b2640"/>
+    <rect x="75" y="186" width="6" height="78" fill="#f5b942"/>
+    <text x="103" y="234" class="layer" fill="#f5b942">Your app</text>
+    <text x="320" y="233" class="apps">ASP.NET Core · Blazor · .NET MAUI · Aspire · console</text>
   </g>
 
   <!-- Agents + tools -->
-  <g opacity="0.55">
-    <rect x="75" y="290" width="1058" height="88" rx="14" fill="#2b2640"/>
-    <rect x="75" y="290" width="6" height="88" fill="#f5b942"/>
-    <text x="103" y="342" class="layer" fill="#f5b942">Agents + tools</text>
-    <text x="366" y="328" class="api-dim">AIAgent</text>
-    <text x="366" y="356" class="desc">Runs multi-step tasks</text>
-    <text x="741" y="328" class="api-dim">AIFunction</text>
-    <text x="741" y="356" class="desc">Lets the model call your C# method</text>
+  <g opacity="0.6">
+    <rect x="75" y="276" width="1058" height="96" rx="14" fill="#2b2640"/>
+    <rect x="75" y="276" width="6" height="96" fill="#f5b942"/>
+    <text x="103" y="333" class="layer" fill="#f5b942">Agents + tools</text>
+    <text x="320" y="318" class="lib-dim">Microsoft.Agents.AI</text>
+    <text x="320" y="346" class="desc">Microsoft Agent Framework: agents and workflows</text>
+    <text x="760" y="318" class="lib-dim">ModelContextProtocol</text>
+    <text x="760" y="346" class="desc">MCP C# SDK: connect tools and data</text>
   </g>
 
   <!-- Context (highlighted) -->
-  <rect x="75" y="390" width="1058" height="150" rx="14" fill="#33294d" stroke="#3ddbb5" stroke-width="2"/>
-  <rect x="75" y="390" width="6" height="150" fill="#3ddbb5"/>
-  <text x="103" y="438" class="layer" fill="#3ddbb5">Context</text>
-  <rect x="103" y="456" width="62" height="28" rx="14" fill="#ff6fb5"/>
-  <text x="134" y="476" class="pill" text-anchor="middle">NEW</text>
-  <text x="366" y="432" class="new">DocumentExtractionClient</text>
-  <text x="366" y="460" class="desc-hi">Turns PDFs and images into sections,</text>
-  <text x="366" y="482" class="desc-hi">text, tables, figures, and page sources</text>
-  <text x="366" y="516" class="desc-hi">One contract, any provider →</text>
-  <text x="741" y="432" class="api">IngestionDocumentReader</text>
-  <text x="741" y="460" class="desc-hi">Feeds extracted documents to</text>
-  <text x="741" y="482" class="desc-hi">chunking, embedding, and vector stores</text>
-  <text x="741" y="516" class="desc-hi">(Microsoft.Extensions.DataIngestion)</text>
+  <rect x="75" y="384" width="1058" height="214" rx="14" fill="#33294d" stroke="#3ddbb5" stroke-width="2"/>
+  <rect x="75" y="384" width="6" height="214" fill="#3ddbb5"/>
+  <text x="103" y="434" class="layer" fill="#3ddbb5">Context</text>
+  <text x="103" y="462" class="desc">Get your data</text>
+  <text x="103" y="484" class="desc">ready for AI</text>
 
-  <!-- Multimodal -->
-  <g opacity="0.55">
-    <rect x="75" y="552" width="1058" height="88" rx="14" fill="#2b2640"/>
-    <rect x="75" y="552" width="6" height="88" fill="#ff8a65"/>
-    <text x="103" y="604" class="layer" fill="#ff8a65">Multimodal</text>
-    <text x="366" y="590" class="api-dim">ISpeechToTextClient</text>
-    <text x="366" y="618" class="desc">Turns audio into text</text>
-    <text x="741" y="590" class="api-dim">IImageGenerator</text>
-    <text x="741" y="618" class="desc">Makes images from prompts</text>
-  </g>
+  <!-- Read (new) -->
+  <rect x="306" y="404" width="262" height="176" rx="12" fill="#3a2244" stroke="#ff6fb5" stroke-width="2"/>
+  <text x="326" y="434" class="step" fill="#ff6fb5">1 · READ</text>
+  <rect x="486" y="417" width="62" height="24" rx="12" fill="#ff6fb5"/>
+  <text x="517" y="434" class="pill" text-anchor="middle">NEW</text>
+  <text x="326" y="470" class="ns-new">Microsoft.Extensions.</text>
+  <text x="326" y="496" class="new">DocumentExtraction</text>
+  <text x="326" y="528" class="desc-hi">PDFs and images in, sections,</text>
+  <text x="326" y="550" class="desc-hi">tables, and figures out</text>
+
+  <line x1="572" y1="492" x2="604" y2="492" stroke="#3ddbb5" stroke-width="3" marker-end="url(#a)"/>
+
+  <!-- Chunk -->
+  <rect x="610" y="404" width="240" height="176" rx="12" fill="#2b2640"/>
+  <text x="630" y="434" class="step" fill="#3ddbb5">2 · CHUNK + ENRICH</text>
+  <text x="630" y="470" class="ns">Microsoft.Extensions.</text>
+  <text x="630" y="496" class="lib">DataIngestion</text>
+  <text x="630" y="528" class="desc-hi">Splits documents into</text>
+  <text x="630" y="550" class="desc-hi">chunks and writes them</text>
+
+  <line x1="854" y1="492" x2="886" y2="492" stroke="#3ddbb5" stroke-width="3" marker-end="url(#a)"/>
+
+  <!-- Store -->
+  <rect x="892" y="404" width="222" height="176" rx="12" fill="#2b2640"/>
+  <text x="912" y="434" class="step" fill="#3ddbb5">3 · STORE + SEARCH</text>
+  <text x="912" y="470" class="ns">Microsoft.Extensions.</text>
+  <text x="912" y="496" class="lib">VectorData</text>
+  <text x="912" y="528" class="desc-hi">One API over vector</text>
+  <text x="912" y="550" class="desc-hi">databases</text>
 
   <!-- Models -->
-  <g opacity="0.55">
-    <rect x="75" y="652" width="1058" height="88" rx="14" fill="#2b2640"/>
-    <rect x="75" y="652" width="6" height="88" fill="#5b8cff"/>
-    <text x="103" y="704" class="layer" fill="#5b8cff">Models</text>
-    <text x="366" y="690" class="api-dim">IChatClient</text>
-    <text x="366" y="718" class="desc">Talks to any model</text>
-    <text x="741" y="690" class="api-dim">IEmbeddingGenerator</text>
-    <text x="741" y="718" class="desc">Turns text into vectors for search</text>
+  <g opacity="0.6">
+    <rect x="75" y="610" width="1058" height="118" rx="14" fill="#2b2640"/>
+    <rect x="75" y="610" width="6" height="118" fill="#5b8cff"/>
+    <text x="103" y="662" class="layer" fill="#5b8cff">Models</text>
+    <text x="103" y="690" class="desc">Text, vision, audio</text>
+    <text x="320" y="652" class="lib-dim">Microsoft.Extensions.AI</text>
+    <text x="320" y="680" class="desc">IChatClient · IEmbeddingGenerator · speech · images</text>
+    <text x="320" y="704" class="desc">One way to call any model, with middleware</text>
+    <text x="840" y="652" class="layer" style="font-size:20px" fill="#c9c4de">Model providers</text>
+    <text x="840" y="680" class="desc">OpenAI · Microsoft Foundry</text>
+    <text x="840" y="704" class="desc">Ollama · and more</text>
   </g>
 
-  <!-- Shared contracts -->
-  <rect x="75" y="752" width="1058" height="78" rx="14" fill="#2b2640"/>
-  <text x="103" y="784" class="foot">Shared contracts: <tspan class="pkg" fill="#7aa2ff">Microsoft.Extensions.AI · Microsoft.Extensions.DataIngestion · </tspan><tspan class="pkg" fill="#ff6fb5">Microsoft.Extensions.DocumentExtraction</tspan></text>
-  <text x="103" y="814" class="foot">Core .NET: <tspan class="pkg" fill="#3ddbb5">Microsoft.ML.Tokenizers · System.Numerics.Tensors</tspan></text>
+  <text x="103" y="770" class="foot">Built on core .NET: System.Numerics.Tensors · Microsoft.ML.Tokenizers</text>
 
   <!-- Providers panel -->
-  <rect x="1167" y="190" width="358" height="640" rx="16" fill="#2b2640"/>
-  <text x="1191" y="230" class="ph">DOCUMENT EXTRACTION</text>
-  <text x="1191" y="254" class="ph">PROVIDERS</text>
-  <text x="1191" y="300" class="pg" fill="#3ddbb5">LOCAL</text>
-  <text x="1191" y="332" class="pi">PdfPig</text>
-  <text x="1191" y="360" class="pi">Vision language model</text>
-  <text x="1191" y="384" class="desc">any IChatClient, such as Ollama</text>
-  <text x="1191" y="436" class="pg" fill="#5b8cff">CLOUD</text>
-  <text x="1191" y="468" class="pi">Azure Document Intelligence</text>
-  <text x="1191" y="496" class="pi">Azure Content Understanding</text>
-  <text x="1191" y="524" class="pi">Mistral OCR</text>
-  <text x="1191" y="548" class="desc">Microsoft Foundry or Mistral API</text>
-  <text x="1191" y="600" class="pg" fill="#f5b942">FROM</text>
-  <text x="1191" y="630" class="pi">CommunityToolkit.</text>
-  <text x="1191" y="654" class="pi">DocumentExtraction.*</text>
-  <text x="1191" y="768" class="tag">Same contract.</text>
-  <text x="1191" y="794" class="tag">Your choice of provider.</text>
+  <rect x="1167" y="186" width="358" height="610" rx="16" fill="#2b2640" stroke="#ff6fb5" stroke-opacity="0.45" stroke-width="2"/>
+  <text x="1191" y="226" class="ph">DOCUMENT EXTRACTION</text>
+  <text x="1191" y="250" class="ph">PROVIDERS</text>
+  <text x="1191" y="298" class="pg" fill="#3ddbb5">LOCAL</text>
+  <text x="1191" y="330" class="pi">PdfPig</text>
+  <text x="1191" y="358" class="pi">Vision language model</text>
+  <text x="1191" y="382" class="desc">any IChatClient, such as Ollama</text>
+  <text x="1191" y="434" class="pg" fill="#5b8cff">CLOUD</text>
+  <text x="1191" y="466" class="pi">Azure Document Intelligence</text>
+  <text x="1191" y="494" class="pi">Azure Content Understanding</text>
+  <text x="1191" y="522" class="pi">Mistral OCR</text>
+  <text x="1191" y="546" class="desc">Microsoft Foundry or Mistral API</text>
+  <text x="1191" y="598" class="pg" fill="#f5b942">FROM</text>
+  <text x="1191" y="628" class="pi">CommunityToolkit.</text>
+  <text x="1191" y="652" class="pi">DocumentExtraction.*</text>
+  <text x="1191" y="740" class="tag">Same contract.</text>
+  <text x="1191" y="766" class="tag">Your choice of provider.</text>
+
+  <!-- connector from READ to providers -->
+  <path d="M437,582 L437,590 L1160,590" fill="none" stroke="#ff6fb5" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ap)"/>
 
   <text x="75" y="868" class="desc">.NET AI STACK / CONTEXT</text>
 </svg>

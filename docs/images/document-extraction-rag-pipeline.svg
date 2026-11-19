@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <style>
+    .title { font: 700 52px 'Segoe UI', sans-serif; fill: #fff; }
+    .sub { font: 400 24px 'Segoe UI', sans-serif; fill: #b4a7f5; }
+    .lane { font: 700 16px 'Segoe UI', sans-serif; letter-spacing: 2px; }
+    .t { font: 600 21px 'Cascadia Code', Consolas, monospace; fill: #fff; }
+    .tn { font: 700 18px 'Cascadia Code', Consolas, monospace; fill: #ff6fb5; }
+    .h { font: 600 22px 'Segoe UI', sans-serif; fill: #fff; }
+    .d { font: 400 16px 'Segoe UI', sans-serif; fill: #c9c4de; }
+    .dd { font: 400 15px 'Segoe UI', sans-serif; fill: #a8a3bf; }
+    .k { font: 700 13px 'Segoe UI', sans-serif; letter-spacing: 1.5px; }
+    .file { font: 400 15px 'Cascadia Code', Consolas, monospace; fill: #e4e0f5; }
+    .q { font: italic 400 20px 'Segoe UI', sans-serif; fill: #fff; }
+    .score { font: 700 17px 'Cascadia Code', Consolas, monospace; fill: #3ddbb5; }
+    .rt { font: 600 18px 'Segoe UI', sans-serif; fill: #fff; }
+    .rs { font: 400 15px 'Cascadia Code', Consolas, monospace; fill: #a8a3bf; }
+    .pill { font: 700 12px 'Segoe UI', sans-serif; fill: #1e1b2e; }
+    .pl { font: 600 17px 'Cascadia Code', Consolas, monospace; fill: #3ddbb5; }
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3ddbb5"/></marker>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5b8cff"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="#1e1b2e"/>
+  <text x="75" y="88" class="title">Feed a RAG pipeline</text>
+  <text x="75" y="134" class="sub">Extraction reads the documents. Data ingestion chunks, embeds, and stores them.</text>
+
+  <text x="75" y="196" class="lane" fill="#3ddbb5">INGEST</text>
+
+  <!-- pipeline container -->
+  <rect x="300" y="214" width="1010" height="250" rx="16" fill="none" stroke="#3ddbb5" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="322" y="452" class="pl">IngestionPipeline&lt;string&gt;</text>
+
+  <!-- books -->
+  <rect x="75" y="244" width="190" height="180" rx="14" fill="#2b2640"/>
+  <text x="97" y="276" class="k" fill="#f5b942">YOUR FILES</text>
+  <rect x="97" y="294" width="34" height="42" rx="4" fill="#f9f7ff"/><rect x="104" y="304" width="20" height="3" fill="#8054d7"/><rect x="104" y="312" width="16" height="3" fill="#c9c4de"/><rect x="104" y="320" width="18" height="3" fill="#c9c4de"/>
+  <rect x="139" y="294" width="34" height="42" rx="4" fill="#f9f7ff"/><rect x="146" y="304" width="20" height="3" fill="#8054d7"/><rect x="146" y="312" width="16" height="3" fill="#c9c4de"/><rect x="146" y="320" width="18" height="3" fill="#c9c4de"/>
+  <rect x="181" y="294" width="34" height="42" rx="4" fill="#f9f7ff"/><rect x="188" y="304" width="20" height="3" fill="#8054d7"/><rect x="188" y="312" width="16" height="3" fill="#c9c4de"/><rect x="188" y="320" width="18" height="3" fill="#c9c4de"/>
+  <text x="97" y="368" class="d">3 PDF books</text>
+  <text x="97" y="392" class="dd">tokens, tensors,</text>
+  <text x="97" y="412" class="dd">agents and tools</text>
+
+  <line x1="268" y1="334" x2="322" y2="334" stroke="#3ddbb5" stroke-width="3" marker-end="url(#a)"/>
+
+  <!-- reader with extraction inside -->
+  <rect x="326" y="234" width="330" height="196" rx="14" fill="#2b2640"/>
+  <text x="346" y="264" class="k" fill="#3ddbb5">1 · READ</text>
+  <text x="346" y="294" class="t">ExtractionReader</text>
+  <text x="346" y="318" class="dd">an IngestionDocumentReader</text>
+  <rect x="346" y="334" width="290" height="80" rx="10" fill="#3a2244" stroke="#ff6fb5" stroke-width="2"/>
+  <text x="362" y="364" class="tn">DocumentExtractionClient</text>
+  <text x="362" y="392" class="d">here: Document Intelligence</text>
+
+  <line x1="660" y1="334" x2="702" y2="334" stroke="#3ddbb5" stroke-width="3" marker-end="url(#a)"/>
+
+  <!-- chunker -->
+  <rect x="706" y="234" width="270" height="196" rx="14" fill="#2b2640"/>
+  <text x="726" y="264" class="k" fill="#3ddbb5">2 · CHUNK</text>
+  <text x="726" y="294" class="t">HeaderChunker</text>
+  <text x="726" y="326" class="d">Splits at the headings</text>
+  <text x="726" y="348" class="d">extraction found</text>
+  <text x="726" y="384" class="dd">256 tokens, 32 overlap</text>
+  <text x="726" y="406" class="dd">TiktokenTokenizer (gpt-4o)</text>
+
+  <line x1="980" y1="334" x2="1022" y2="334" stroke="#3ddbb5" stroke-width="3" marker-end="url(#a)"/>
+
+  <!-- writer -->
+  <rect x="1026" y="234" width="264" height="196" rx="14" fill="#2b2640"/>
+  <text x="1046" y="264" class="k" fill="#3ddbb5">3 · EMBED + WRITE</text>
+  <text x="1046" y="294" class="t">VectorStoreWriter</text>
+  <text x="1046" y="326" class="d">Embeds each chunk with</text>
+  <text x="1046" y="348" class="d">IEmbeddingGenerator</text>
+  <text x="1046" y="384" class="dd">embeddinggemma on Ollama</text>
+  <text x="1046" y="406" class="dd">768 dimensions</text>
+
+  <line x1="1312" y1="334" x2="1346" y2="334" stroke="#3ddbb5" stroke-width="3" marker-end="url(#a)"/>
+
+  <!-- store -->
+  <rect x="1350" y="244" width="175" height="180" rx="14" fill="#2b2640" stroke="#5b8cff" stroke-width="2"/>
+  <ellipse cx="1437" cy="292" rx="42" ry="12" fill="none" stroke="#5b8cff" stroke-width="3"/>
+  <path d="M1395,292 L1395,336 A42,12 0 0 0 1479,336 L1479,292" fill="none" stroke="#5b8cff" stroke-width="3"/>
+  <path d="M1395,314 A42,12 0 0 0 1479,314" fill="none" stroke="#5b8cff" stroke-width="2"/>
+  <text x="1437" y="380" class="h" text-anchor="middle" style="font-size:18px">Vector store</text>
+  <text x="1437" y="404" class="dd" text-anchor="middle">InMemoryVectorStore</text>
+
+  <!-- ASK lane -->
+  <text x="75" y="540" class="lane" fill="#5b8cff">ASK</text>
+
+  <rect x="75" y="560" width="420" height="140" rx="14" fill="#2b2640"/>
+  <text x="97" y="592" class="k" fill="#5b8cff">QUESTION</text>
+  <text x="97" y="634" class="q">"How do I count tokens</text>
+  <text x="97" y="662" class="q">before calling a model?"</text>
+
+  <line x1="498" y1="630" x2="548" y2="630" stroke="#5b8cff" stroke-width="3" marker-end="url(#b)"/>
+
+  <rect x="552" y="560" width="250" height="140" rx="14" fill="#2b2640"/>
+  <text x="574" y="592" class="k" fill="#5b8cff">SEARCH</text>
+  <text x="574" y="628" class="d">Embed the question,</text>
+  <text x="574" y="652" class="d">find the closest chunks</text>
+  <text x="574" y="684" class="dd">top 3 by similarity</text>
+
+  <!-- store to search connector -->
+  <path d="M1437,426 L1437,500 L677,500 L677,556" fill="none" stroke="#5b8cff" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#b)"/>
+
+  <line x1="805" y1="630" x2="855" y2="630" stroke="#5b8cff" stroke-width="3" marker-end="url(#b)"/>
+
+  <!-- results -->
+  <rect x="859" y="540" width="666" height="270" rx="14" fill="#2b2640"/>
+  <text x="881" y="572" class="k" fill="#5b8cff">RESULTS, EACH WITH ITS SECTION</text>
+  <rect x="881" y="590" width="622" height="62" rx="10" fill="#33294d" stroke="#3ddbb5" stroke-width="1.5"/>
+  <text x="899" y="619" class="score">0.61</text>
+  <text x="963" y="619" class="rt">Three things to remember</text>
+  <text x="963" y="641" class="rs">tokens-explained.pdf</text>
+  <rect x="881" y="664" width="622" height="62" rx="10" fill="#33294d"/>
+  <text x="899" y="693" class="score">0.55</text>
+  <text x="963" y="693" class="rt">Counting tokens and staying in budget</text>
+  <text x="963" y="715" class="rs">tokens-explained.pdf</text>
+  <rect x="881" y="738" width="622" height="62" rx="10" fill="#33294d"/>
+  <text x="899" y="767" class="score">0.55</text>
+  <text x="963" y="767" class="rt">Plan your budget</text>
+  <text x="963" y="789" class="rs">tokens-explained.pdf · includes the table as Markdown</text>
+
+  <text x="75" y="760" class="d">Good structure in, focused chunks out.</text>
+  <text x="75" y="786" class="dd">Headings from extraction become chunk boundaries</text>
+  <text x="75" y="808" class="dd">and section titles in your search results.</text>
+
+  <text x="75" y="868" class="dd">06-ingest.cs · dotnet-document-extraction-samples</text>
+</svg>

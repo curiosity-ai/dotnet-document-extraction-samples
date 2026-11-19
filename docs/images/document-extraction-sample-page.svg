@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="900" viewBox="0 0 1600 900">
+  <style>
+    .title { font: 700 46px 'Segoe UI', sans-serif; fill: #fff; }
+    .sub { font: 400 22px 'Segoe UI', sans-serif; fill: #b4a7f5; }
+    .body { font: 400 19px 'Segoe UI', sans-serif; fill: #e4e0f5; }
+    .dim { font: 400 17px 'Segoe UI', sans-serif; fill: #a8a3bf; }
+    .role { font: 700 21px 'Cascadia Code', Consolas, monospace; }
+    .note { font: 400 16px 'Segoe UI', sans-serif; fill: #c9c4de; }
+    .k { font: 700 14px 'Segoe UI', sans-serif; letter-spacing: 1.5px; }
+    .m { font: 400 16px 'Cascadia Code', Consolas, monospace; fill: #e4e0f5; }
+  </style>
+  <rect width="1600" height="900" fill="#1e1b2e"/>
+  <text x="75" y="120" class="title">The page the</text>
+  <text x="75" y="174" class="title">samples compare</text>
+  <text x="75" y="226" class="sub">Tokens, Explained, page 3</text>
+  <text x="75" y="290" class="body">One page with a bit of everything:</text>
+  <text x="75" y="318" class="body">headers, a heading, a table with</text>
+  <text x="75" y="346" class="body">merged cells, a figure, and code.</text>
+  <text x="75" y="420" class="k" fill="#3ddbb5">THE LABELS</text>
+  <text x="75" y="450" class="body">are the roles Azure Document</text>
+  <text x="75" y="478" class="body">Intelligence returned for each part.</text>
+  <text x="75" y="552" class="k" fill="#f5b942">TRY THIS</text>
+  <text x="75" y="582" class="body">PdfPig reads the same page as</text>
+  <text x="75" y="610" class="body">loose lines of text, with no table.</text>
+  <text x="75" y="638" class="body">Same file, different provider.</text>
+  <text x="75" y="868" class="dim">books/pages/tokens-explained-hero.pdf</text>
+
+  <rect x="566" y="88" width="602.8" height="780.1" rx="4" fill="#000" fill-opacity="0.35"/>
+  <image x="560" y="80" width="602.8" height="780.1" href="../../books/pages/tokens-explained-hero.png" xlink:href="../../books/pages/tokens-explained-hero.png" preserveAspectRatio="none"/>
+  <rect x="613.2" y="95.8" width="497.4" height="21.7" rx="4" fill="#5b8cff" fill-opacity="0.07" stroke="#5b8cff" stroke-width="2.5"/>
+  <path d="M1110.6,106.6 L1150,106.6 L1170,112 L1182,112" fill="none" stroke="#5b8cff" stroke-width="2"/>
+  <circle cx="1110.6" cy="106.6" r="4" fill="#5b8cff"/>
+  <text x="1190" y="118" class="role" fill="#5b8cff">pageHeader</text>
+  <text x="1190" y="142" class="note">running header, twice</text>  <rect x="613.2" y="130.2" width="161.5" height="31.5" rx="4" fill="#ff6fb5" fill-opacity="0.07" stroke="#ff6fb5" stroke-width="2.5"/>
+  <path d="M774.7,146 L1150,146 L1170,196 L1182,196" fill="none" stroke="#ff6fb5" stroke-width="2"/>
+  <circle cx="774.7" cy="146" r="4" fill="#ff6fb5"/>
+  <text x="1190" y="202" class="role" fill="#ff6fb5">heading</text>
+  <text x="1190" y="226" class="note">Tokenizers in .NET</text>  <rect x="613.2" y="165.7" width="495.5" height="52.2" rx="4" fill="#b4a7f5" fill-opacity="0.07" stroke="#b4a7f5" stroke-width="2.5"/>
+  <path d="M1108.7,191.8 L1150,191.8 L1170,280 L1182,280" fill="none" stroke="#b4a7f5" stroke-width="2"/>
+  <circle cx="1108.7" cy="191.8" r="4" fill="#b4a7f5"/>
+  <text x="1190" y="286" class="role" fill="#b4a7f5">text</text>
+  <text x="1190" y="310" class="note">a paragraph</text>  <rect x="616.1" y="221.8" width="492.5" height="203.9" rx="4" fill="#3ddbb5" fill-opacity="0.07" stroke="#3ddbb5" stroke-width="2.5"/>
+  <path d="M1108.6,323.8 L1150,323.8 L1170,364 L1182,364" fill="none" stroke="#3ddbb5" stroke-width="2"/>
+  <circle cx="1108.6" cy="323.8" r="4" fill="#3ddbb5"/>
+  <text x="1190" y="370" class="role" fill="#3ddbb5">table 6x5</text>
+  <text x="1190" y="394" class="note">merged header cells</text>  <rect x="613.2" y="429.7" width="497.4" height="193.1" rx="4" fill="#f5b942" fill-opacity="0.07" stroke="#f5b942" stroke-width="2.5"/>
+  <path d="M1110.6,526.2 L1150,526.2 L1170,536 L1182,536" fill="none" stroke="#f5b942" stroke-width="2"/>
+  <circle cx="1110.6" cy="526.2" r="4" fill="#f5b942"/>
+  <text x="1190" y="542" class="role" fill="#f5b942">image</text>
+  <text x="1190" y="566" class="note">the figure and its caption</text>  <rect x="831.9" y="822.7" width="60.1" height="21.7" rx="4" fill="#5b8cff" fill-opacity="0.07" stroke="#5b8cff" stroke-width="2.5"/>
+  <path d="M892,833.6 L1150,833.6 L1170,830 L1182,830" fill="none" stroke="#5b8cff" stroke-width="2"/>
+  <circle cx="892" cy="833.6" r="4" fill="#5b8cff"/>
+  <text x="1190" y="836" class="role" fill="#5b8cff">pageNumber</text>
+  <text x="1190" y="860" class="note">Page 3 of 5</text>
+</svg>
