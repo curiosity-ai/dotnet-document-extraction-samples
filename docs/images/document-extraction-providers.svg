@@ -46,7 +46,7 @@
   <text x="474" y="460" class="h" fill="#b4a7f5">ANY ICHATCLIENT</text>
   <rect x="474" y="472" width="332" height="56" rx="10" fill="#2b2640"/>
   <text x="492" y="498" class="chip">Vision language model</text>
-  <text x="492" y="518" class="chip-d">Local, like Ollama, or hosted</text>
+  <text x="492" y="518" class="chip-d">Local or hosted</text>
 
   <text x="474" y="556" class="h" fill="#5b8cff">HOSTED SERVICES</text>
   <rect x="474" y="568" width="332" height="56" rx="10" fill="#2b2640"/>
