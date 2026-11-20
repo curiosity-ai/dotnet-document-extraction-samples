@@ -1,5 +1,5 @@
 #!/usr/bin/env dotnet
-// 06: Feed a RAG pipeline.
+// 06: Feed a data ingestion pipeline, then search it (RAG).
 // Extracts the three books with any provider, turns the result into IngestionDocuments,
 // chunks at headings, embeds with a local model, and searches the result.
 //   dotnet run 06-ingest.cs

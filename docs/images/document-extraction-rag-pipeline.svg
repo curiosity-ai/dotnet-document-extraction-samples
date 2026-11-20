@@ -22,7 +22,7 @@
     <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5b8cff"/></marker>
   </defs>
   <rect width="1600" height="900" fill="#1e1b2e"/>
-  <text x="75" y="88" class="title">Feed a RAG pipeline</text>
+  <text x="75" y="88" class="title">Feed a data ingestion pipeline</text>
   <text x="75" y="134" class="sub">Extraction reads the documents. Data ingestion chunks, embeds, and stores them.</text>
 
   <text x="75" y="196" class="lane" fill="#3ddbb5">INGEST</text>
