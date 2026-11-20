@@ -43,8 +43,8 @@
 
   <!-- Card -->
   <g filter="url(#shadow)">
-    <rect x="1180" y="240" width="644" height="600" rx="48" fill="#F9F7FF"/>
-    <rect x="1212" y="272" width="580" height="464" rx="24" fill="#FFFFFF" stroke="#E8E2F3" stroke-width="2"/>
+    <rect x="1180" y="250" width="644" height="560" rx="48" fill="#F9F7FF"/>
+    <rect x="1212" y="282" width="580" height="340" rx="24" fill="#FFFFFF" stroke="#E8E2F3" stroke-width="2"/>
   </g>
 
   <!-- Document page -->
@@ -86,13 +86,8 @@
     <text x="1574" y="548">Image</text>
   </g>
 
-  <!-- Providers -->
-  <path d="M1256 600H1748" stroke="#E8E2F3" stroke-width="2"/>
-  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
-    <text x="1502" y="638" font-size="18" fill="#79698D" letter-spacing="2">PROVIDERS INCLUDE</text>
-    <text x="1502" y="680" font-size="22" font-weight="600" fill="#3E2F5C">PdfPig  ·  Vision LLMs  ·  Mistral OCR</text>
-    <text x="1502" y="714" font-size="22" font-weight="600" fill="#3E2F5C">Document Intelligence  ·  Content Understanding</text>
-  </g>
-
-  <text x="1502" y="798" font-family="Cascadia Mono, Consolas, monospace" font-size="30" fill="#57466E" text-anchor="middle">DocumentExtractionClient</text>
-</svg>
+  <!-- Library -->
+  <g text-anchor="middle">
+    <text x="1502" y="680" font-family="Cascadia Mono, Consolas, monospace" font-size="24" fill="#79698D">Microsoft.Extensions.DocumentExtraction</text>
+    <text x="1502" y="738" font-family="Cascadia Mono, Consolas, monospace" font-size="34" font-weight="600" fill="#57466E">DocumentExtractionClient</text>
+  </g></svg>

@@ -19,7 +19,7 @@
     </marker>
   </defs>
   <rect width="1600" height="900" fill="#1e1b2e"/>
-  <text x="75" y="92" class="title">One contract, five providers</text>
+  <text x="75" y="92" class="title">One contract, many providers</text>
   <text x="75" y="142" class="sub">Same code in. Same shape out. Pick the provider that fits the document.</text>
 
   <!-- Input page -->
@@ -38,26 +38,28 @@
   <text x="474" y="300" class="code-s">ExtractAsync(stream,</text>
   <text x="474" y="322" class="code-s">  identifier, mediaType)</text>
 
-  <text x="474" y="376" class="h" fill="#3ddbb5">LOCAL</text>
-  <rect x="474" y="390" width="332" height="56" rx="10" fill="#2b2640"/>
-  <text x="492" y="416" class="chip">PdfPig</text>
-  <text x="492" y="436" class="chip-d">Born-digital PDFs, in process, no OCR</text>
-  <rect x="474" y="454" width="332" height="56" rx="10" fill="#2b2640"/>
-  <text x="492" y="480" class="chip">Vision language model</text>
-  <text x="492" y="500" class="chip-d">Any IChatClient, such as Ollama</text>
+  <text x="474" y="364" class="h" fill="#3ddbb5">IN PROCESS</text>
+  <rect x="474" y="376" width="332" height="56" rx="10" fill="#2b2640"/>
+  <text x="492" y="402" class="chip">PdfPig</text>
+  <text x="492" y="422" class="chip-d">PDFs with a text layer, no OCR</text>
 
-  <text x="474" y="552" class="h" fill="#5b8cff">CLOUD</text>
-  <rect x="474" y="566" width="332" height="56" rx="10" fill="#2b2640"/>
-  <text x="492" y="592" class="chip">Azure Document Intelligence</text>
-  <text x="492" y="612" class="chip-d">Layout, tables, page coordinates</text>
-  <rect x="474" y="630" width="332" height="56" rx="10" fill="#2b2640"/>
-  <text x="492" y="656" class="chip">Azure Content Understanding</text>
-  <text x="492" y="676" class="chip-d">Layout plus analyzers you customize</text>
-  <rect x="474" y="694" width="332" height="56" rx="10" fill="#2b2640"/>
-  <text x="492" y="720" class="chip">Mistral OCR</text>
-  <text x="492" y="740" class="chip-d">Fast OCR to Markdown, Foundry or API</text>
-  <text x="474" y="796" class="chip-d">Change one line to switch.</text>
+  <text x="474" y="460" class="h" fill="#b4a7f5">ANY ICHATCLIENT</text>
+  <rect x="474" y="472" width="332" height="56" rx="10" fill="#2b2640"/>
+  <text x="492" y="498" class="chip">Vision language model</text>
+  <text x="492" y="518" class="chip-d">Local, like Ollama, or hosted</text>
 
+  <text x="474" y="556" class="h" fill="#5b8cff">HOSTED SERVICES</text>
+  <rect x="474" y="568" width="332" height="56" rx="10" fill="#2b2640"/>
+  <text x="492" y="594" class="chip">Azure Content Understanding</text>
+  <text x="492" y="614" class="chip-d">Layout plus analyzers you customize</text>
+  <rect x="474" y="632" width="332" height="56" rx="10" fill="#2b2640"/>
+  <text x="492" y="658" class="chip">Azure Document Intelligence</text>
+  <text x="492" y="678" class="chip-d">Layout, tables, page coordinates</text>
+  <rect x="474" y="696" width="332" height="56" rx="10" fill="#2b2640"/>
+  <text x="492" y="722" class="chip">Mistral OCR</text>
+  <text x="492" y="742" class="chip-d">OCR to Markdown, Foundry or Mistral API</text>
+  <rect x="474" y="764" width="332" height="50" rx="10" fill="none" stroke="#f5b942" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="492" y="795" class="chip" style="fill:#f5b942">+ Your own provider</text>
   <line x1="845" y1="410" x2="895" y2="410" stroke="#b4a7f5" stroke-width="3" marker-end="url(#arrow)"/>
 
   <!-- Result -->

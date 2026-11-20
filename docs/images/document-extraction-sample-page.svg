@@ -16,13 +16,9 @@
   <text x="75" y="290" class="body">One page with a bit of everything:</text>
   <text x="75" y="318" class="body">headers, a heading, a table with</text>
   <text x="75" y="346" class="body">merged cells, a figure, and code.</text>
-  <text x="75" y="420" class="k" fill="#3ddbb5">THE LABELS</text>
-  <text x="75" y="450" class="body">are the roles Azure Document</text>
-  <text x="75" y="478" class="body">Intelligence returned for each part.</text>
-  <text x="75" y="552" class="k" fill="#f5b942">TRY THIS</text>
-  <text x="75" y="582" class="body">PdfPig reads the same page as</text>
-  <text x="75" y="610" class="body">loose lines of text, with no table.</text>
-  <text x="75" y="638" class="body">Same file, different provider.</text>
+  <text x="75" y="420" class="body">Each callout is a role a layout-aware</text>
+  <text x="75" y="448" class="body">provider, like Azure Content</text>
+  <text x="75" y="476" class="body">Understanding, assigns to that part.</text>
   <text x="75" y="868" class="dim">books/pages/tokens-explained-hero.pdf</text>
 
   <rect x="566" y="88" width="602.8" height="780.1" rx="4" fill="#000" fill-opacity="0.35"/>
