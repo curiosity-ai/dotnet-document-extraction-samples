@@ -11,6 +11,7 @@
 #:package Azure.Identity@1.21.0
 #:package OllamaSharp@5.5.2
 #:package PDFtoImage@5.4.0
+#:package SkiaSharp.NativeAssets.Linux.NoDependencies@4.153.1
 #:property PublishAot=false
 #:property NoWarn=$(NoWarn);MEDE0001;EXTEXP0019;CTDE0001;CA1416
 
