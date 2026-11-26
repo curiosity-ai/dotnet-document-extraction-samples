@@ -1,16 +1,16 @@
 #!/usr/bin/env dotnet
 // Shared helpers for every sample. Each sample pulls this file in with #:include,
 // so all package references live here in one place.
-#:package Microsoft.Extensions.DocumentExtraction@11.0.0-preview.1.26560.3
+#:package Microsoft.Extensions.DocumentExtraction@11.0.1-preview.1.26570.2
 #:package CommunityToolkit.DocumentExtraction.PdfPig@1.0.0-preview
 #:package CommunityToolkit.DocumentExtraction.VisionLanguageModel@1.0.0-preview
 #:package CommunityToolkit.DocumentExtraction.Mistral@1.0.0-preview
 #:package CommunityToolkit.DocumentExtraction.AzureDocumentIntelligence@1.0.0-preview
 #:package CommunityToolkit.DocumentExtraction.AzureContentUnderstanding@1.0.0-preview
-#:package X-Ray.DocumentExtraction@*-*
+#:package X-Ray.DocumentExtraction@26.11.8565-preview
 #:package Azure.Identity@1.21.0
 #:package OllamaSharp@5.5.2
-#:package PDFtoImage@5.1.1
+#:package PDFtoImage@5.4.0
 #:property PublishAot=false
 #:property NoWarn=$(NoWarn);MEDE0001;EXTEXP0019;CTDE0001;CA1416
 
